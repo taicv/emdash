@@ -2,13 +2,13 @@
 	"$schema": "https://emdashcms.com/seed.schema.json",
 	"version": "1",
 	"meta": {
-		"name": "Blog Starter",
-		"description": "A blog with posts and pages",
-		"author": "EmDash"
+		"name": "Tai Chu's CMS Testing Ground",
+		"description": "Playing around with EmDash CMS",
+		"author": "Tai Chu (taicv)"
 	},
-	"settings": {
-		"title": "My Blog",
-		"tagline": "Thoughts on building for the web"
+	"settings": {	
+		"title": "Tai Chu's EmDash Testing Ground",
+		"tagline": "WordPress Developer testing EmDash CMS"
 	},
 	"collections": [
 		{
@@ -213,8 +213,8 @@
 	"bylines": [
 		{
 			"id": "byline-editorial",
-			"slug": "emdash-editorial",
-			"displayName": "EmDash Editorial"
+			"slug": "tai-chu",
+			"displayName": "Tai Chu"
 		},
 		{
 			"id": "byline-guest",
@@ -317,7 +317,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"text": "A blog about software, design, and the occasional stray thought."
+									"text": "Testing EmDash CMS by Tai Chu, WordPress Developer at GrabWP."
 								}
 							]
 						}
@@ -369,7 +369,7 @@
 					"children": [
 						{
 							"_type": "span",
-							"text": "A software developer who writes about building things on the web. Based somewhere with good coffee and reliable internet."
+							"text": "Tai Chu is a WordPress Developer and the creator of GrabWP Tenancy plugins (https://grabwp.com). Currently testing EmDash CMS."
 						}
 					]
 				}
@@ -383,7 +383,7 @@
 				"slug": "about",
 				"status": "published",
 				"data": {
-					"title": "About",
+					"title": "About My Work & Journey",
 					"content": [
 						{
 							"_type": "block",
@@ -391,7 +391,17 @@
 							"children": [
 								{
 									"_type": "span",
-									"text": "A place for writing about software, design, and the occasional stray thought. No posting schedule, no newsletter funnel. Just things I wanted to write down."
+									"text": "Hi, I'm Tai Chu (taicv). I'm a WordPress Developer dedicated to advancing WordPress Tenancy architecture. I'm the creator behind GrabWP, building plugins that redefine how WordPress handles multiple tenants."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [
+								{
+									"_type": "span",
+									"text": "The Tenancy Problem"
 								}
 							]
 						},
@@ -401,7 +411,27 @@
 							"children": [
 								{
 									"_type": "span",
-									"text": "Built with Astro and EmDash. The source is open if you want to see how it works."
+									"text": "For years, WordPress developers have relied on Multisite for managing networks of websites. But Multisite comes with massive tradeoffs in database scaling, domain mapping complexities, and plugin compatibility. With GrabWP version 1.0.7, I've shifted the architecture to support path routing without traditional WordPress Multisite, dramatically simplifying WaaS (Website as a Service) operations."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Why EmDash?"
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "As much as I love WordPress for backend robustness, I'm highly interested in the decoupled, performance-first approach of Astro. EmDash represents a modern, Astro-native CMS utilizing an SQLite database—a stark contrast to monolithic MySQL WordPress setups. I'm currently experimenting with it to explore new ecosystems and architectural ideas!"
 								}
 							]
 						}
@@ -418,8 +448,8 @@
 						{
 							"_type": "marketing.hero",
 							"_key": "pricing-hero",
-							"headline": "Simple, transparent pricing",
-							"subheadline": "No hidden fees. No surprises. Start free and scale as you grow.",
+							"headline": "Launch Your WordPress SaaS",
+							"subheadline": "The ultimate Tenancy plugin for WordPress without the constraints of Multisite.",
 							"centered": true
 						},
 						{
@@ -427,56 +457,56 @@
 							"_key": "pricing-plans",
 							"plans": [
 								{
-									"name": "Starter",
-									"price": "$0",
-									"period": "/month",
-									"description": "Perfect for trying things out",
+									"name": "Single Site",
+									"price": "$49",
+									"period": "/year",
+									"description": "Perfect for freelancers offering hosting to a few clients.",
 									"features": [
-										"Up to 3 team members",
-										"5 projects",
-										"Basic analytics",
-										"Community support",
-										"1GB storage"
+										"1 Active Network",
+										"Path Routing Support",
+										"Basic Tenancy Features",
+										"Community Support",
+										"1 Year Updates"
 									],
 									"cta": {
 										"label": "Get Started",
-										"url": "/signup"
+										"url": "https://grabwp.com"
 									}
 								},
 								{
-									"name": "Pro",
-									"price": "$29",
-									"period": "/user/month",
-									"description": "For growing teams",
+									"name": "Agency WaaS",
+									"price": "$199",
+									"period": "/year",
+									"description": "Build high-scale Website-as-a-Service platforms.",
 									"features": [
-										"Unlimited team members",
-										"Unlimited projects",
-										"Advanced analytics",
-										"Priority support",
-										"100GB storage",
-										"Custom integrations",
-										"API access"
+										"Unlimited Networks",
+										"No Multisite Required",
+										"1.0.7 Advanced Domain Mapping",
+										"Priority Email Support",
+										"White-label Tools",
+										"API Access",
+										"Lifetime Updates"
 									],
 									"cta": {
-										"label": "Start Free Trial",
-										"url": "/signup?plan=pro"
+										"label": "Buy Agency Plan",
+										"url": "https://grabwp.com"
 									},
 									"highlighted": true
 								},
 								{
 									"name": "Enterprise",
 									"price": "Custom",
-									"description": "For large organizations",
+									"description": "For massive infrastructure managing thousands of sites.",
 									"features": [
-										"Everything in Pro",
-										"Dedicated support",
-										"Custom contracts",
-										"SLA guarantee",
-										"Unlimited storage"
+										"Everything in Agency",
+										"Custom Migrations",
+										"SLA Guarantees",
+										"Dedicated Technical Account Manager",
+										"Infrastructure Consultations"
 									],
 									"cta": {
 										"label": "Contact Sales",
-										"url": "/contact"
+										"url": "https://grabwp.com"
 									}
 								}
 							]
@@ -484,19 +514,19 @@
 						{
 							"_type": "marketing.faq",
 							"_key": "pricing-faq",
-							"headline": "Pricing FAQ",
+							"headline": "GrabWP FAQ",
 							"items": [
 								{
-									"question": "Can I change plans later?",
-									"answer": "Yes, you can upgrade or downgrade at any time. Changes take effect immediately and we'll prorate your billing."
+									"question": "Do I need WordPress Multisite?",
+									"answer": "No! With our version 1.0.7 release, we introduced a major architectural shift to path routing that completely eliminates the need for traditional WordPress Multisite."
 								},
 								{
-									"question": "What payment methods do you accept?",
-									"answer": "We accept all major credit cards, and Enterprise customers can pay via invoice with NET 30 terms."
+									"question": "Does it require complicated domain mapping?",
+									"answer": "Not anymore. Our new system abstracts domain mapping and handles routing natively, making your WaaS significantly easier to scale."
 								},
 								{
-									"question": "Is there a discount for annual billing?",
-									"answer": "Yes, annual plans receive a 20% discount compared to monthly billing."
+									"question": "Can I use GrabWP on standard shared hosting?",
+									"answer": "While it can run on anywhere WordPress runs, we highly recommend a VPS or managed architecture for true tenancy scaling and stability."
 								}
 							]
 						}
@@ -1074,15 +1104,140 @@
 		],
 		"projects": [
 			{
-				"id": "meridian-brand",
-				"slug": "meridian-brand",
+				"id": "grabwp-tenancy",
+				"slug": "grabwp-tenancy",
 				"status": "published",
 				"data": {
-					"title": "Meridian",
-					"client": "Meridian Collective",
+					"title": "GrabWP Tenancy",
+					"client": "GrabWP",
+					"year": "2024-2026",
+					"summary": "A modern WordPress architecture enabling huge scale Website-as-a-Service capabilities.",
+					"featured_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=900&fit=crop",
+					"url": "https://grabwp.com",
+					"content": [
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Building a WaaS on WordPress historically required using WordPress Multisite, a legacy system that shares database tables in a way that breaks at scale and struggles with plugin compatibility. GrabWP aims to solve this fundamental issue."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [
+								{
+									"_type": "span",
+									"text": "The Version 1.0.7 Shift"
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "In GrabWP 1.0.7, we implemented a massive architectural overhaul to the support path routing system. This update completely eliminates the requirement for domain mapping and replaces the traditional WordPress multisite approach entirely, bringing robust performance and modern routing to tenancy setups."
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": ["development"],
+					"tag": ["webdev", "tools"]
+				}
+			},
+			{
+				"id": "emdash-testing",
+				"slug": "emdash-testing",
+				"status": "published",
+				"data": {
+					"title": "EmDash CMS Testing",
+					"client": "Personal R&D",
+					"year": "2026",
+					"summary": "Exploring modern Astro-native, SQLite-powered CMS architecture as a potential decoupled backend.",
+					"featured_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=900&fit=crop",
+					"content": [
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "As a thought experiment and capability study, I'm currently evaluating EmDash. While my primary expertise lies in PHP and WordPress, the broader JavaScript and edge compute ecosystems are moving too fast to ignore."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "EmDash's approach to storing schema natively in an SQLite database, paired with its incredibly fast Astro front-end capabilities, represents an intriguing concept for edge-ready Content Management Systems."
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": ["development", "notes"],
+					"tag": ["ui-ux"]
+				}
+			},
+			{
+				"id": "acme-waas",
+				"slug": "acme-waas",
+				"status": "published",
+				"data": {
+					"title": "ACME Network (WaaS)",
+					"client": "ACME Real Estate",
+					"year": "2025",
+					"summary": "A high-scale Website-as-a-Service model built with GrabWP Tenancy for thousands of real estate agents.",
+					"featured_image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=900&fit=crop",
+					"content": [
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "ACME Real Estate needed a way to provision fully-featured WordPress sites for thousands of their agents, instantly. Using traditional WP Multisite led to massive database bottlenecks."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "With GrabWP, we deployed a tenancy architecture that isolates each agent's environment while sharing core plugin logic, utilizing the 1.0.7 path routing features for flawless performance."
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": ["web", "development"],
+					"tag": ["tools"]
+				}
+			},
+			{
+				"id": "woo-scale",
+				"slug": "woo-scale",
+				"status": "published",
+				"data": {
+					"title": "WooCommerce Scale-Up",
+					"client": "Retail Giant",
 					"year": "2024",
-					"summary": "A complete brand identity for a creative collective bringing together artists and technologists.",
-					"featured_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=900&fit=crop",
+					"summary": "Optimization and custom architecture for a WooCommerce store processing 10k+ orders daily.",
+					"featured_image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&h=900&fit=crop",
 					"content": [
 						{
 							"_type": "block",
@@ -1090,200 +1245,15 @@
 							"children": [
 								{
 									"_type": "span",
-									"text": "Meridian Collective needed a visual identity that could bridge the gap between traditional art and emerging technology. The challenge was to create something that felt timeless yet forward-looking."
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The approach"
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "We developed a wordmark that combines classical typography with subtle geometric forms. The color palette draws from both digital interfaces and natural materials, creating a bridge between worlds."
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The result"
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The new identity has been applied across print and digital touchpoints, from business cards to a fully responsive website. Meridian has received positive feedback from both artists and technologists alike."
+									"text": "WooCommerce is incredibly flexible, but out of the box, it can struggle under extreme query loads. We performed a full architectural audit and rebuilt the underlying query structure to optimize cache hit rates."
 								}
 							]
 						}
 					]
 				},
 				"taxonomies": {
-					"category": ["branding"],
-					"tag": ["identity", "art-direction"]
-				}
-			},
-			{
-				"id": "volta-web",
-				"slug": "volta-web",
-				"status": "published",
-				"data": {
-					"title": "Volta",
-					"client": "Volta Energy",
-					"year": "2024",
-					"summary": "Website design for a renewable energy startup making clean power accessible to everyone.",
-					"featured_image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=900&fit=crop",
-					"url": "https://volta.example.com",
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Volta is on a mission to make renewable energy accessible to everyone. They needed a website that could explain complex technology simply while inspiring trust in potential customers."
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Design principles"
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "We focused on clarity and warmth. The design uses generous whitespace and a vibrant green accent that evokes growth and sustainability without feeling clich\u00e9d."
-								}
-							]
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["web"],
-					"tag": ["ui-ux", "development"]
-				}
-			},
-			{
-				"id": "archive-print",
-				"slug": "archive-print",
-				"status": "published",
-				"data": {
-					"title": "The Archive",
-					"client": "City Museum",
-					"year": "2023",
-					"summary": "Exhibition catalog and print materials for a retrospective on modernist architecture.",
-					"featured_image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=900&fit=crop",
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The Archive was a major exhibition at the City Museum, showcasing 50 years of modernist architecture through photographs, drawings, and models. We designed the complete print identity."
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The catalog"
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The 240-page catalog uses a strict grid system inspired by the work being exhibited. Full-bleed photography alternates with dense text spreads, creating a rhythm that echoes the exhibition layout."
-								}
-							]
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["print"],
-					"tag": ["editorial", "art-direction"]
-				}
-			},
-			{
-				"id": "coastal-photo",
-				"slug": "coastal-photo",
-				"status": "published",
-				"data": {
-					"title": "Coastal",
-					"client": "Personal Project",
-					"year": "2023",
-					"summary": "A photographic study of the Pacific coastline, exploring the intersection of land, sea, and sky.",
-					"featured_image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1200&h=900&fit=crop",
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Coastal began as a weekend project and grew into a year-long exploration of the Pacific shoreline. Shot entirely on medium format film, the series captures the quiet drama of the coast."
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Process"
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Each image was made at dawn or dusk, when the light is softest and the beaches are empty. The slow process of shooting film encourages patience and intentionality \u2014 qualities that show in the final work."
-								}
-							]
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["photography"],
-					"tag": ["art-direction", "editorial"]
+					"category": ["development"],
+					"tag": ["ecommerce"]
 				}
 			}
 		]
