@@ -9,7 +9,7 @@
 		{
 			"binding": "DB",
 			"database_name": "aio-cloudflare",
-			"database_id": "63f73ab8-3917-4c1b-9557-88c6fd686199",
+			"database_id": "local",
 		},
 	],
 	"r2_buckets": [
