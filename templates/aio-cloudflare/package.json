@@ -1,5 +1,5 @@
 {
-  "name": "@emdash-cms/template-blog",
+  "name": "@emdash-cms/template-aio-cloudflare",
   "version": "0.0.3",
   "private": true,
   "type": "module",
@@ -13,24 +13,20 @@
     "start": "node ./dist/server/entry.mjs",
     "bootstrap": "emdash init && emdash seed",
     "seed": "emdash seed",
-    "deploy": "astro build && wrangler deploy",
     "typecheck": "astro check"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.1.6",
-    "@astrojs/react": "^5.0.0",
-    "@emdash-cms/cloudflare": "^0.1.0",
-    "@emdash-cms/plugin-forms": "^0.1.0",
-    "@emdash-cms/plugin-webhook-notifier": "^0.1.0",
-    "astro": "^6.1.2",
-    "emdash": "^0.1.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "@astrojs/node": "catalog:",
+    "@astrojs/react": "catalog:",
+    "@emdash-cms/plugin-audit-log": "workspace:*",
+    "astro": "catalog:",
+    "better-sqlite3": "catalog:",
+    "emdash": "workspace:*",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.7",
-    "@cloudflare/workers-types": "^4.20260401.1",
-    "wrangler": "^4.79.0"
+    "@astrojs/check": "catalog:"
   },
   "peerDependencies": {},
   "optionalDependencies": {}
